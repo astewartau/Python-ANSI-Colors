@@ -24,6 +24,40 @@ The following colors are available as both foreground and background colors:
 
 """
 
+from sys import stdout
+
+def color_print(
+        *args,
+        sep=' ',
+        end='\n',
+        file=stdout,
+        flush=False,
+        fg='white',
+        bg='black'
+):
+    """Print colored objects to the text stream file, separated by sep and 
+    followed by end. Can safely replace Python's print statement to support ANSI
+    colors.
+
+    Args:
+        args: objects to print.
+        sep: separates objects if there are multiple objects.
+        end: final character printed.
+        file: text stream to print to.
+        flush: forces stream flushing.
+        fg: foreground color of output text.
+        bg: background color of output text.
+
+    """
+    message = ""
+
+    for i, arg in enumerate(args):
+        message += str(arg)
+        if i < len(args) - 1:
+            message += sep
+    
+    print(color_string(message, fg, bg), end=end, file=file, flush=flush)
+
 def color_string(message, fg='white', bg='black'):
     """Build a printable colored string using ANSI escape codes.
     
