@@ -1,5 +1,5 @@
 # Simple ANSI Colors for Python
-Importing this tiny module will allow you to produce colored text in any terminal supporting ANSI colors.
+Importing [this tiny module](https://raw.githubusercontent.com/astewartau/Python-ANSI-Colors/master/ansi_colors.py) will allow you to produce colored text in any terminal supporting ANSI colors.
 
 [Click here for full documentation.](https://astewartau.github.io/Python-ANSI-Colors/)
 
