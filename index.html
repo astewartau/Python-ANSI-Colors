@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module ansi_colors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>ansi_colors</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:e%3A%5Cdevelopment%5Crepos%5Cansi_colors%5Cansi_colors.py">e:\development\repos\ansi_colors\ansi_colors.py</a></font></td></tr></table>
+    <p><tt>Simple&nbsp;Colored&nbsp;Text&nbsp;using&nbsp;ANSI&nbsp;Escape&nbsp;Codes.<br>
+&nbsp;<br>
+This&nbsp;module&nbsp;contains&nbsp;functions&nbsp;for&nbsp;writing&nbsp;colored&nbsp;text&nbsp;to&nbsp;consoles&nbsp;supporting<br>
+16&nbsp;ANSI&nbsp;background&nbsp;and&nbsp;foreground&nbsp;colors.<br>
+&nbsp;<br>
+The&nbsp;following&nbsp;colors&nbsp;are&nbsp;available&nbsp;as&nbsp;both&nbsp;foreground&nbsp;and&nbsp;background&nbsp;colors:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;black<br>
+&nbsp;&nbsp;&nbsp;&nbsp;red<br>
+&nbsp;&nbsp;&nbsp;&nbsp;green<br>
+&nbsp;&nbsp;&nbsp;&nbsp;yellow<br>
+&nbsp;&nbsp;&nbsp;&nbsp;blue<br>
+&nbsp;&nbsp;&nbsp;&nbsp;magenta<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cyan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;white<br>
+&nbsp;&nbsp;&nbsp;&nbsp;brightblack<br>
+&nbsp;&nbsp;&nbsp;&nbsp;brightred<br>
+&nbsp;&nbsp;&nbsp;&nbsp;brightgreen<br>
+&nbsp;&nbsp;&nbsp;&nbsp;brightyellow<br>
+&nbsp;&nbsp;&nbsp;&nbsp;brightblue<br>
+&nbsp;&nbsp;&nbsp;&nbsp;brightmagenta<br>
+&nbsp;&nbsp;&nbsp;&nbsp;brightcyan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;brightwhite</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-color_print"><strong>color_print</strong></a>(*args, sep=' ', end='\n', file=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='utf-8'&gt;, flush=False, fg='white', bg='black')</dt><dd><tt>Print&nbsp;colored&nbsp;objects&nbsp;to&nbsp;the&nbsp;text&nbsp;stream&nbsp;file,&nbsp;separated&nbsp;by&nbsp;sep&nbsp;and&nbsp;<br>
+followed&nbsp;by&nbsp;end.&nbsp;Can&nbsp;safely&nbsp;replace&nbsp;Python's&nbsp;print&nbsp;statement&nbsp;to&nbsp;support&nbsp;ANSI<br>
+colors.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:&nbsp;objects&nbsp;to&nbsp;print.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sep:&nbsp;separates&nbsp;objects&nbsp;if&nbsp;there&nbsp;are&nbsp;multiple&nbsp;objects.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end:&nbsp;final&nbsp;character&nbsp;printed.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;file:&nbsp;text&nbsp;stream&nbsp;to&nbsp;print&nbsp;to.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;flush:&nbsp;forces&nbsp;stream&nbsp;flushing.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fg:&nbsp;foreground&nbsp;color&nbsp;of&nbsp;output&nbsp;text.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bg:&nbsp;background&nbsp;color&nbsp;of&nbsp;output&nbsp;text.</tt></dd></dl>
+ <dl><dt><a name="-color_string"><strong>color_string</strong></a>(message, fg='white', bg='black')</dt><dd><tt>Build&nbsp;a&nbsp;printable&nbsp;colored&nbsp;string&nbsp;using&nbsp;ANSI&nbsp;escape&nbsp;codes.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;message:&nbsp;string&nbsp;representing&nbsp;the&nbsp;text&nbsp;data&nbsp;to&nbsp;color.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fg:&nbsp;string&nbsp;representing&nbsp;the&nbsp;desired&nbsp;foreground&nbsp;color&nbsp;(see&nbsp;module<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;documentation&nbsp;for&nbsp;colors).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bg:&nbsp;string&nbsp;representing&nbsp;the&nbsp;desired&nbsp;background&nbsp;color&nbsp;(see&nbsp;module&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;documentation&nbsp;for&nbsp;colors).<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string:&nbsp;the&nbsp;original&nbsp;message,&nbsp;colored&nbsp;if&nbsp;specified.</tt></dd></dl>
+ <dl><dt><a name="-set_color"><strong>set_color</strong></a>(fg=None, bg=None)</dt><dd><tt>Set&nbsp;the&nbsp;proceeding&nbsp;text&nbsp;colors.&nbsp;Reset&nbsp;colors&nbsp;if&nbsp;no&nbsp;arguments&nbsp;are&nbsp;given.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fg:&nbsp;String&nbsp;representing&nbsp;the&nbsp;desired&nbsp;foreground&nbsp;color&nbsp;of&nbsp;proceeding&nbsp;text.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bg:&nbsp;string&nbsp;representing&nbsp;the&nbsp;desired&nbsp;background&nbsp;color&nbsp;of&nbsp;proceeding&nbsp;text.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>stdout</strong> = &lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='utf-8'&gt;</td></tr></table>
+</body></html>
