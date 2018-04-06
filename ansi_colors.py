@@ -129,7 +129,9 @@ def set_color(fg=None, bg=None):
     """
     
     if not (fg or bg):
-        print(color_string(""), end="")
+        print('\x1b[{0};{1}m'.format(color_string.ansi_foreground['white'],
+                                     color_string.ansi_background['black']),
+              end="")
         return
 
     if set_color.first_run:
